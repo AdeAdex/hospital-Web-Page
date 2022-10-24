@@ -2361,6 +2361,10 @@ footer {
     display: block;
     position: ;
   }
+  
+  .under {
+    justify-content: space-between;
+  }
 
   .under .others {
     display: none;
