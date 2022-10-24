@@ -116,13 +116,16 @@ let footericon = document.getElementById("footerIcon");
 footericon.addEventListener ("click", showMoreFooter)
 function showMoreFooter() {
   footerdropdown.classList.toggle("showfooter");
-  footericon.classList.toggle("fa-minus");
+  footericon.classList.toggle("fa-square-minus");
 }
 
 
-
+let signinalerticon = document.getElementById("signIcon");
+let signindropdown = document.getElementById("signAlert");
+signinalerticon.addEventListener("click", showSignOption)
 function showSignOption() {
-  document.getElementById("signAlert").classList.toggle("showed");
+  signindropdown.classList.toggle("showed");
+  signinalerticon.classList.toggle("fa-xmark");
 }
 
 
