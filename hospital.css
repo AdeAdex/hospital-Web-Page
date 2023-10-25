@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -7,17 +7,19 @@
 body {
   margin: 0;
   /*background-color: blueviolet;*/
-  background-image: linear-gradient(-45deg, mediumblue 20%, yellow 20%, cyan 50%,  deepskyblue 55%, blueviolet 70%);
+  background-image: linear-gradient(
+    -45deg,
+    mediumblue 20%,
+    yellow 20%,
+    cyan 50%,
+    deepskyblue 55%,
+    blueviolet 70%
+  );
   /*background-image: linear-gradient(140deg, blueviolet 0%, #BC70A4 50%, skyblue 75%);*/
   /*background-image: conic-gradient(red, yellow, green, blue, black);*/
   /*background-image: radial-gradient(red 5%, yellow 15%, green 60%);*/
   font-family: Arial, Helvetica, sans-serif;
 }
-
-
-
-
-
 
 .top-nav {
   background-color: whitesmoke;
@@ -30,7 +32,6 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   padding: 8px 0px;
-  color: ;
 }
 
 .primary-nav {
@@ -42,13 +43,10 @@ body {
   color: white;
 }
 
-.primary-nav .fas, .others-on-small-screen .fas{
+.primary-nav .fas,
+.others-on-small-screen .fas {
   padding-right: 5px;
 }
-
-
-
-
 
 #alert {
   display: none;
@@ -56,12 +54,10 @@ body {
   background-color: navajowhite;
   text-align: center;
   font-size: 12px;
-  height: ;
   position: absolute;
-  z-index: ;
   text-transform: initial;
   color: black;
-  }
+}
 
 #alert button {
   color: white;
@@ -78,11 +74,14 @@ body {
 }
 
 @keyframes flash {
-  0%, 50%, 100% {
-     opacity: 1;
+  0%,
+  50%,
+  100% {
+    opacity: 1;
   }
-  25%, 75% {
-     opacity: 0.3;
+  25%,
+  75% {
+    opacity: 0.3;
   }
 }
 
@@ -99,10 +98,6 @@ body {
 .closebtn2:hover {
   color: red;
 }
-
-
-
-
 
 .under {
   display: flex;
@@ -127,7 +122,8 @@ body {
   color: black;
 }
 
-.under .others, .under label {
+.under .others,
+.under label {
   margin: auto 0px;
   width: 40%;
 }
@@ -146,21 +142,22 @@ body {
   color: white;
 }
 
-.others .email, .others-on-small-screen .email {
+.others .email,
+.others-on-small-screen .email {
   text-transform: unset;
 }
 
 .others a:before {
   border-top: 3px solid orange;
   display: block;
-  content: '';
-  transform: scaleX(0);  
+  content: "";
+  transform: scaleX(0);
   transition: transform 250ms ease-in-out;
   position: relative;
   bottom: 10px;
 }
 
-.others a:hover:before { 
+.others a:hover:before {
   transform: scaleX(1.1);
   transform-origin: 0% 50%;
 }
@@ -188,24 +185,18 @@ body {
   display: none;
 }
 
-
-
-
-
-
-
 .mega-nav {
   display: flex;
   height: 60px;
   justify-content: space-around;
 }
 
-.mega-nav div, .mega-nav nav {
+.mega-nav div,
+.mega-nav nav {
   margin: auto;
 }
 
 .logo-img {
-  width: ;
   height: 100%;
   cursor: pointer;
 }
@@ -213,10 +204,6 @@ body {
 .logo-img img {
   width: 100%;
   height: 100%;
-}
-
-nav {
-  display: ;
 }
 
 .nav .icon {
@@ -240,32 +227,29 @@ nav li {
 
 nav .dropbtn {
   color: darkcyan;
-  z-index: ;
 }
 
 nav .dropbtn:hover {
   color: red;
 }
 
-
-
 .dropbtn:after {
   position: relative;
   top: 15px;
   display: block;
-  content: '';
+  content: "";
   color: darkcyan;
   border-bottom: 4px solid orange;
-  transform: scaleX(0);  
+  transform: scaleX(0);
   transition: transform 250ms ease-in-out;
 }
 
-.dropbtn:hover:after { 
-  transform: scaleX(1.4); 
+.dropbtn:hover:after {
+  transform: scaleX(1.4);
 }
 
-.dropbtn:focus:after { 
-  transform: scaleX(1.4); 
+.dropbtn:focus:after {
+  transform: scaleX(1.4);
 }
 /*li a:after{ transform-origin:100% 50%; } /*this tranform from right*/
 /*li a:after{  transform-origin:  0% 50%; }*/ /*this transform from left*/
@@ -276,7 +260,6 @@ nav .dropbtn:hover {
   position: relative;
 }
 
-
 .dropdown-content {
   display: none;
   position: fixed;
@@ -284,7 +267,7 @@ nav .dropbtn:hover {
   width: 1100px;
   height: 600px;
   overflow: hidden;
-  box-shadow: 0px 5px 3px rgba(2,2,255,.8);
+  box-shadow: 0px 5px 3px rgba(2, 2, 255, 0.8);
   border-radius: 0px 0px 10px 10px;
   padding-bottom: 20px;
   padding-top: 0px;
@@ -303,7 +286,6 @@ nav .dropbtn:hover {
   font-size: 12px;
   text-transform: capitalize;
 }
-
 
 .sec h5 {
   width: 100%;
@@ -349,7 +331,8 @@ nav .dropbtn:hover {
   overflow-y: auto;
 }
 
-.right-view-one, .right-view-two {
+.right-view-one,
+.right-view-two {
   width: 49%;
   height: 100%;
   overflow-y: auto;
@@ -373,10 +356,10 @@ nav .dropbtn:hover {
   display: block;
   background-color: lightgray;
 }
- .dpt-footer-i {
+.dpt-footer-i {
   width: 100%;
-    display: flex;
-  }
+  display: flex;
+}
 
 .dpt-footer a {
   font-size: 15px;
@@ -387,8 +370,6 @@ nav .dropbtn:hover {
   padding-right: 5px;
 }
 
-
-
 .active3 {
   background-color: unset;
 }
@@ -396,15 +377,6 @@ nav .dropbtn:hover {
 .show {
   display: block;
 }
-
-
-
-
-
-
-
-
-
 
 .dpt-view .our-team-img-container {
   width: 100%;
@@ -467,7 +439,7 @@ nav .dropbtn:hover {
 .dpt-view .our-team-img-about:hover .span {
   bottom: 20%;
   transform: rotate(0deg);
-  transition: .5s linear;
+  transition: 0.5s linear;
   opacity: 1;
 }
 
@@ -478,42 +450,6 @@ nav .dropbtn:hover {
 .dpt-view .our-team-icon {
   display: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #search {
   padding: 8px;
@@ -536,13 +472,6 @@ nav .dropbtn:hover {
   color: dimgray;
 }
 
-
-
-
-
-
-
-
 .appointment-div {
   position: relative;
 }
@@ -562,7 +491,8 @@ nav .dropbtn:hover {
   color: white;
 }
 
-.mega-nav .appointment-button a:hover, .appointment-button:hover {
+.mega-nav .appointment-button a:hover,
+.appointment-button:hover {
   border-bottom: none;
   background-color: dodgerblue;
 }
@@ -582,29 +512,22 @@ nav .dropbtn:hover {
   right: -50%;
 }
 
-
-
-
-
-
-
-
 .welcome-greeting {
   text-align: center;
-  background:linear-gradient(141deg, #ccc 25%, #eee 40%, #ddd 55%);
-  color:#555;
-  font-family:'Roboto';
+  background: linear-gradient(141deg, #ccc 25%, #eee 40%, #ddd 55%);
+  color: #555;
+  font-family: "Roboto";
   font-size: 25px;
-  overflow:hidden;
+  overflow: hidden;
   /*-webkit-backface-visibility: hidden;
   -webkit-perspective: 1000;
   -webkit-transform: translate3d(0,0,0);*/
 }
 
 .welcome {
-  display:inline-block;
-  overflow:hidden;
-  white-space:nowrap;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
   animation: showup 7s infinite;
   margin-left: 0px;
 }
@@ -613,36 +536,69 @@ nav .dropbtn:hover {
   width: 55%;
   animation: reveal 7s infinite;
   display: inline-block;
-  overflow:hidden;
-  white-space:nowrap;
+  overflow: hidden;
+  white-space: nowrap;
   text-align: left;
 }
 
 .greeting span {
-  margin-left:-100%;
+  margin-left: -100%;
   animation: slidein 7s infinite;
 }
 
 @keyframes showup {
-    0% {opacity:0; margin-left: 30px;}
-    20% {opacity:1; margin-left: 30px;}
-    80% {opacity:1; margin-left: 30px;}
-    100% {opacity:0; margin-left: 30px;}
+  0% {
+    opacity: 0;
+    margin-left: 30px;
+  }
+  20% {
+    opacity: 1;
+    margin-left: 30px;
+  }
+  80% {
+    opacity: 1;
+    margin-left: 30px;
+  }
+  100% {
+    opacity: 0;
+    margin-left: 30px;
+  }
 }
 
 @keyframes slidein {
-    0% { margin-left:-200%;}
-    20% { margin-left:-200%;}
-    35% { margin-left:0%; }
-    100% { margin-left:0%; }
+  0% {
+    margin-left: -200%;
+  }
+  20% {
+    margin-left: -200%;
+  }
+  35% {
+    margin-left: 0%;
+  }
+  100% {
+    margin-left: 0%;
+  }
 }
 
 @keyframes reveal {
-    0% {opacity:0;width:0%;}
-    20% {opacity:1;width:0%;}
-    30% {width:55%;}
-    80% {opacity:1;}
-    100% {opacity:0;width:55%;}
+  0% {
+    opacity: 0;
+    width: 0%;
+  }
+  20% {
+    opacity: 1;
+    width: 0%;
+  }
+  30% {
+    width: 55%;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 55%;
+  }
 }
 
 .side-show h3 {
@@ -650,9 +606,8 @@ nav .dropbtn:hover {
   text-transform: capitalize;
   font-size: large;
   text-align: center;
-  margin-bottom: 30px ;
+  margin-bottom: 30px;
 }
-
 
 hr {
   margin-bottom: 20px;
@@ -698,7 +653,8 @@ hr {
 }
 
 #displayConsultImgType {
-  background-image: linear-gradient(rgba(0, 0, 5, 0.2), rgba(0, 0, 5, 0.2)), url(pic/Doctor-checking-blood-pressure.jpg);
+  background-image: linear-gradient(rgba(0, 0, 5, 0.2), rgba(0, 0, 5, 0.2)),
+    url(pic/Doctor-checking-blood-pressure.jpg);
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -708,25 +664,11 @@ hr {
   display: flex;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .main {
-  transition: .5s ease;
+  transition: 0.5s ease;
 }
 
-
-#adsArea{
+#adsArea {
   display: flex;
   width: 100%;
   height: 500px;
@@ -758,31 +700,21 @@ hr {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #008CBA;
+  background-color: #008cba;
   overflow: hidden;
   animation-name: fade;
   animation-duration: 1.5s;
-  /*animation-name: me;
-  animation-duration: 2s;*/
 }
 
 @keyframes fade {
-  0% {opacity: 0} 
-  100% {opacity: 1 bottom: 500px}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    bottom: 500px;
+  }
 }
-
-/*@keyframes me {
-  0% {width: 0%;}
-  50% {width: 40%; transform: scale(.8);}
-  100% {width: 100%;}
-}*/
-
-
-
-
-
-
-
 
 .dot {
   height: 15px;
@@ -800,13 +732,11 @@ hr {
   background-color: blue;
 }
 
-
 .quick-menu {
   display: flex;
   flex-direction: column;
-  visibility: ;
   opacity: 1;
-  transition: opacity .3s linear;
+  transition: opacity 0.3s linear;
 }
 
 .quick-menu a {
@@ -848,18 +778,6 @@ hr {
   right: -25px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .main-container {
   width: 100%;
 }
@@ -891,8 +809,8 @@ hr {
   width: 100%;
   height: auto;
   margin: 0px auto;
-  background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(0, 0, 255, 0.8)), url("pic/nurseunder1.jpg");
-  background-position: ;
+  background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(0, 0, 255, 0.8)),
+    url("pic/nurseunder1.jpg");
   background-size: 100% 100%;
   background-blend-mode: darken;
   background-repeat: no-repeat;
@@ -902,17 +820,6 @@ hr {
   background-blend-mode: soft-light;
 }
 
-
-/*@keyframes run {
-    from {
-      background-position: 50px;
-    }
-    to {
-      background-position: -1440px;
-    }
-}*/
-
-
 .hover-show {
   position: relative;
   width: 8%;
@@ -921,10 +828,8 @@ hr {
   cursor: pointer;
 }
 
-
 .hover-show div {
   display: block;
-  color: ;
 }
 
 .image {
@@ -934,15 +839,15 @@ hr {
   overflow: hidden;
   width: 0;
   height: 100%;
-  transition: .5s ease;
+  transition: 0.5s ease;
   z-index: 1;
   border-radius: 5px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url("pic/nurse5.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)),
+    url("pic/nurse5.jpg");
 }
-
 
 .hover-show i {
   margin: 0px auto;
@@ -975,13 +880,13 @@ hr {
   color: yellow;
 }
 
-
-.hover-show:hover .image, .hover-show:hover span{
+.hover-show:hover .image,
+.hover-show:hover span {
   width: 100%;
   color: white;
 }
 
-.show1:hover i:first-child  {
+.show1:hover i:first-child {
   color: white;
   animation-name: injection;
   animation-duration: 2s;
@@ -1010,18 +915,18 @@ hr {
   }
 }
 
-.show2:hover i:first-child  {
+.show2:hover i:first-child {
   color: white;
   transform: scale(1.2, 1.3);
 }
 
-.show3:hover i:first-child  {
+.show3:hover i:first-child {
   color: white;
   text-shadow: 0 0 10px red, 0 0 50px red;
-  animation: heartbeat .8s;
+  animation: heartbeat 0.8s;
 }
 
-@keyframes heartbeat{
+@keyframes heartbeat {
   0% {
     transform: scale(1.1);
   }
@@ -1056,14 +961,13 @@ hr {
 
 .show5:hover i:first-child {
   color: white;
-  animation: eyes 4s  infinite;
-  animation-direction: ;
+  animation: eyes 4s infinite;
   animation-timing-function: linear;
 }
 
 @keyframes eyes {
   0% {
-    transform: scale(.5);
+    transform: scale(0.5);
   }
 
   30% {
@@ -1079,36 +983,32 @@ hr {
   }
 
   100% {
-    transform:scale(2);
+    transform: scale(2);
   }
 }
 
 .show6:hover i:first-child {
   color: white;
   animation: lung 3s steps(5) infinite;
-  animation-direction: ;
   animation-timing-function: linear;
 }
 
 @keyframes lung {
   0% {
-    transform: scale(.5);
+    transform: scale(0.5);
   }
   50% {
     transform: scale(2, 1.5);
   }
   100% {
-    transform: scale(.5);
+    transform: scale(0.5);
   }
 }
-
-
 
 .show7:hover i:first-child {
   color: white;
   animation: teeth 1s steps(10) infinite;
   animation-direction: alternate;
-  animation-timing-function: ;
 }
 
 @keyframes teeth {
@@ -1148,13 +1048,10 @@ hr {
   }
 }
 
-
-
 .show8:hover i:first-child {
   color: white;
   animation: wheelchair 4s steps(10) infinite;
   animation-direction: alternate;
-  animation-timing-function: ;
 }
 
 @keyframes wheelchair {
@@ -1171,12 +1068,9 @@ hr {
   }
 }
 
-
-
 .show9:hover i:first-child {
   color: white;
-  animation: covid 4s  infinite;
-  animation-direction: ;
+  animation: covid 4s infinite;
   animation-timing-function: linear;
   padding-top: 0;
   margin-top: 50px;
@@ -1188,31 +1082,10 @@ hr {
     transform: rotate(0deg);
   }
 
-
   100% {
     transform: rotate(360deg);
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #information {
   width: 100%;
@@ -1234,12 +1107,13 @@ hr {
   display: inline-block;
   font-size: 40px;
   animation: flips 5s infinite;
-  animation-delay: calc(.10s * var(--i))
+  animation-delay: calc(0.1s * var(--i));
 }
 
 @keyframes flips {
-  0%,50% {
-    transform: rotateY(360deg) ;
+  0%,
+  50% {
+    transform: rotateY(360deg);
     color: white;
   }
 }
@@ -1251,12 +1125,9 @@ hr {
   padding-top: 10px;
   padding-bottom: 20px;
   width: 50%;
-  margin: 0px auto ;
+  margin: 0px auto;
   text-align: center;
 }
-
-
-
 
 .infoma {
   width: 100%;
@@ -1280,15 +1151,12 @@ hr {
 
 #infoMa div {
   width: 85%;
-  height: ;
   left: 7%;
   position: relative;
   top: -36%;
   background-color: darkblue;
   height: 35%;
   transform: skewX(-15deg);
-  display: ;
-  flex-direction: ;
 }
 
 #infoMa h3 {
@@ -1329,13 +1197,12 @@ hr {
   cursor: pointer;
 }
 
-
 .information1 {
   left: 18%;
   opacity: 0;
   transform: translateX(-40%);
   transition: opacity 2s ease, transform 3s ease;
-  }
+}
 
 .information-transition1 {
   opacity: 1;
@@ -1345,9 +1212,9 @@ hr {
 .information2 {
   left: 40%;
   opacity: 0;
-  transform: scale(.5);
+  transform: scale(0.5);
   transition: opacity 2s ease, transform 3s ease;
-  }
+}
 
 .information-transition2 {
   opacity: 1;
@@ -1359,30 +1226,12 @@ hr {
   opacity: 0;
   transform: translateX(40%);
   transition: opacity 2s ease, transform 3s ease;
-  }
+}
 
 .information-transition3 {
   opacity: 1;
   transform: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .ads {
   width: 100%;
@@ -1396,8 +1245,6 @@ hr {
   object-fit: cover;
 }
 
-
-
 .attentions {
   position: absolute;
   display: flex;
@@ -1405,7 +1252,6 @@ hr {
   width: 76%;
   left: 12%;
   text-align: center;
-  z-index: ;
   background: rgba(0, 0, 0, 0.3);
 }
 
@@ -1442,35 +1288,13 @@ hr {
 
 .attentions span:not(:first-child) {
   font-size: 18px;
-  font-family: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype", Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif;
+  font-family: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype",
+    Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif;
   font-weight: bold;
   width: 40%;
   margin: auto;
   color: antiquewhite;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #whyUs {
   width: 100%;
@@ -1508,13 +1332,15 @@ hr {
   justify-content: space-evenly;
 }
 
-.why-col-1, .why-col-2, .why-col-3 {
+.why-col-1,
+.why-col-2,
+.why-col-3 {
   display: grid;
   width: 30%;
-  background-color: ;
 }
 
-.why-col-1 .why-info, .why-col-3 .why-info {
+.why-col-1 .why-info,
+.why-col-3 .why-info {
   display: grid;
   padding-bottom: 40px;
 }
@@ -1543,7 +1369,6 @@ hr {
   font-family: serif;
 }
 
-
 .why-col-2 img {
   width: 100%;
   height: 100%;
@@ -1551,22 +1376,6 @@ hr {
   object-fit: cover;
   object-position: 50% 1%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .testimonial-container {
   display: block;
@@ -1601,7 +1410,7 @@ hr {
   position: relative;
   padding-left: 15px;
   margin-right: 10px;
-  box-shadow: 1px 1px 3px 1px rgba(0,0,255,.8);
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 255, 0.8);
 }
 
 .testi-img {
@@ -1646,28 +1455,16 @@ hr {
   color: orange;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .gallary-container {
   width: 100%;
   height: 520px;
   padding: 10px 0px;
   margin: 0px auto;
-  background-image: linear-gradient(rgba(0, 139, 139, 0.6), rgba(0, 139, 139, 0.8)), url(pic/hospital-gallary-under-img2.jpg);
+  background-image: linear-gradient(
+      rgba(0, 139, 139, 0.6),
+      rgba(0, 139, 139, 0.8)
+    ),
+    url(pic/hospital-gallary-under-img2.jpg);
   background-repeat: no-repeat;
   background-position: center;
   filter: blur(px);
@@ -1683,7 +1480,7 @@ hr {
   position: relative;
   margin-top: 20px;
   width: 100%;
-  height: 350px;  
+  height: 350px;
 }
 
 .mySlides2 {
@@ -1691,16 +1488,14 @@ hr {
   width: 50%;
   height: 100%;
   margin: 0px auto;
-  box-shadow: 1px -5px 20px 5px rgba(2,2,255,.8);
+  box-shadow: 1px -5px 20px 5px rgba(2, 2, 255, 0.8);
   border-radius: 3px;
 }
 
 .mySlides2 img {
-  vertical-align: ;
   height: 100%;
   border-radius: 3px;
 }
-
 
 .prev,
 .next {
@@ -1751,7 +1546,6 @@ hr {
 .row {
   width: 100%;
   height: 80px;
-  background-color: ;
   display: flex;
   justify-content: space-around;
 }
@@ -1782,28 +1576,8 @@ hr {
   opacity: 1;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .our-team-container {
   width: 100%;
-  height: ;
   padding: 40px;
   background-color: white;
   position: relative;
@@ -1877,8 +1651,6 @@ hr {
   cursor: pointer;
 }
 
-
-
 .our-team-img-about .span {
   color: white;
   width: 80%;
@@ -1894,7 +1666,7 @@ hr {
 }
 
 .our-team-img-about:hover .our-team-img {
-  opacity: .2;
+  opacity: 0.2;
 }
 
 .our-team-img-about:hover .more {
@@ -1905,7 +1677,7 @@ hr {
 .our-team-img-about:hover .span {
   bottom: 20%;
   transform: rotate(0deg);
-  transition: .5s linear;
+  transition: 0.5s linear;
   opacity: 1;
 }
 
@@ -1957,14 +1729,9 @@ hr {
 }
 
 .our-team-icon .fa-whatsapp {
-  background-color: #078E54;
+  background-color: #078e54;
   padding: 3px 5px;
 }
-
-
-
-
-
 
 .colored-line-container {
   background-color: #f1f1f1;
@@ -1972,22 +1739,25 @@ hr {
   height: 30px;
 }
 
-
 .multi-colored-line {
-    height: 6px;
-    margin-top: px;
-    width: 100%;
-    z-index: 3;
-    background: linear-gradient(to right, mediumblue 10%,  red 30%, red 40%, cyan 30%, cyan 60%, orange 30%, darkorange 80%, green 60%, forestgreen 100%);
-    margin-bottom: 100px;
+  height: 6px;
+  margin-top: px;
+  width: 100%;
+  z-index: 3;
+  background: linear-gradient(
+    to right,
+    mediumblue 10%,
+    red 30%,
+    red 40%,
+    cyan 30%,
+    cyan 60%,
+    orange 30%,
+    darkorange 80%,
+    green 60%,
+    forestgreen 100%
+  );
+  margin-bottom: 100px;
 }
-
-
-
-
-
-
-
 
 ::-webkit-scrollbar {
   width: 5px;
@@ -2005,86 +1775,42 @@ hr {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: darkorange; 
+  background: darkorange;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 #topBtn {
   display: none;
   position: fixed;
   bottom: 20px;
-  right: 50px; 
-  z-index: 1; 
-  border: none; 
-  outline: none; 
-  background-color: red; 
-  color: white; 
-  cursor: pointer; 
-  padding: 10px 14px; 
+  right: 50px;
+  z-index: 1;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 10px 14px;
   border-radius: 50%;
   font-size: 25px;
   animation-name: btn;
   animation-duration: 2s;
-  animation-timing-function: linear; 
+  animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
 
 @keyframes btn {
-  0% {transform: translateY(0px); opacity: 0;}
-  100% {transform: translateY(-35px); }
+  0% {
+    transform: translateY(0px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-35px);
+  }
 }
 
 #topBtn:hover {
-  background-color: dodgerblue; 
-  transform: ;
+  background-color: dodgerblue;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 footer {
   width: 100%;
@@ -2134,7 +1860,8 @@ footer {
   text-decoration: none;
 }
 
-.col-1 a, .col-1 p {
+.col-1 a,
+.col-1 p {
   color: yellow;
   padding-top: 10px;
 }
@@ -2197,14 +1924,12 @@ footer {
   height: 35px;
   transform: skewX(-30deg);
   display: flex;
-  object-fit: ;
   object-position: 100% 80%;
   padding-left: 10px;
 }
 
-
 .half-moon {
-  background: linear-gradient(to right, #0099FF 50%, red 30%);
+  background: linear-gradient(to right, #0099ff 50%, red 30%);
   height: 100%;
   width: 15%;
   border-radius: 50%;
@@ -2234,7 +1959,6 @@ footer {
   color: white;
   position: relative;
   left: 45%;
-
 }
 
 .half-moon i:hover {
@@ -2260,15 +1984,13 @@ footer {
 }
 
 .half-moon .fa-whatsapp {
-  background-color: #078E54;
+  background-color: #078e54;
 }
 
 .half-moon .fa-youtube {
   background-color: red;
   padding: 5px 4px;
 }
-
-
 
 .copyright {
   width: 100%;
@@ -2301,37 +2023,16 @@ footer {
   display: none;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .cookies {
   display: flex;
   position: fixed;
   width: 100%;
-  top: 700px;
+  bottom: 0;
   padding: 15px;
   background-color: slategray;
   justify-content: center;
   z-index: 3;
 }
-
 
 #demo {
   padding-right: 15px;
@@ -2348,47 +2049,8 @@ footer {
   border-radius: 5px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 600px) {
-  #alert {
-    display: ;
-  }
-
-  .mega-nav { 
+  .mega-nav {
     background-color: white;
     display: flex;
     position: fixed;
@@ -2400,7 +2062,6 @@ footer {
     font-size: 30px;
     cursor: pointer;
     display: block;
-    position: ;
     width: auto;
   }
 
@@ -2413,21 +2074,27 @@ footer {
   }
 
   .others-on-small-screen {
-    display: ;
     position: relative;
     height: 40vh;
     padding: 20px;
     background-color: darkblue;
     animation-name: slidedowns;
-    animation-direction: ;
-    animation-duration: .5s;
+    animation-duration: 0.5s;
     animation-timing-function: linear;
   }
 
   @keyframes slidedowns {
-    0% { height: 0vh; opacity: 0;}
-    80% {opacity: 0;}
-    100% { height: 40vh; opacity: 1;}
+    0% {
+      height: 0vh;
+      opacity: 0;
+    }
+    80% {
+      opacity: 0;
+    }
+    100% {
+      height: 40vh;
+      opacity: 1;
+    }
   }
 
   .reachus {
@@ -2435,7 +2102,6 @@ footer {
     display: flex;
     justify-content: space-around;
   }
-
 
   .others-on-small-screen a {
     color: white;
@@ -2466,21 +2132,16 @@ footer {
 
   .showed {
     display: block;
-}
-
-
+  }
 
   .logo-img {
-    background-color: ;
     position: absolute;
     left: 5%;
-    border: ;
   }
 
   nav {
     position: absolute;
     width: 100%;
-    padding-right: ;
   }
 
   nav ul {
@@ -2488,23 +2149,22 @@ footer {
     overflow-y: auto;
   }
 
-  .nav li/*:not(:first-child)*/ {
+  .nav li {
     display: none;
   }
 
-  .dropbtn:hover:after { 
-    transform: scaleX(1); 
+  .dropbtn:hover:after {
+    transform: scaleX(1);
   }
 
-  .dropbtn:focus:after { 
-    transform: scaleX(1); 
+  .dropbtn:focus:after {
+    transform: scaleX(1);
   }
 
   .nav a.icon {
     display: block;
     position: relative;
     float: right;
-    text-align: ;
     border-bottom: none;
     z-index: 1;
     padding-right: 30px;
@@ -2517,7 +2177,7 @@ footer {
     width: 100%;
     height: 90vh;
     overflow: hidden;
-    box-shadow: 0px 5px 3px rgba(2,2,255,.8);
+    box-shadow: 0px 5px 3px rgba(2, 2, 255, 0.8);
     border-radius: 0px 0px 10px 10px;
     padding-bottom: 20px;
     padding-top: 0px;
@@ -2526,8 +2186,6 @@ footer {
     left: 2%;
     z-index: 1;
   }
-
-
 
   .sec h5 {
     width: 100%;
@@ -2576,7 +2234,7 @@ footer {
     overflow-y: auto;
   }
 
-  .right-view-one{
+  .right-view-one {
     width: 100%;
     height: 100%;
     overflow-y: auto;
@@ -2615,15 +2273,6 @@ footer {
   .show {
     display: block;
   }*/
-
-
-
-
-
-
-
-
-
 
   .dpt-view .our-team-img-container {
     width: 100%;
@@ -2690,7 +2339,7 @@ footer {
   .dpt-view .our-team-img-about:hover .span {
     bottom: 20%;
     transform: rotate(0deg);
-    transition: .5s linear;
+    transition: 0.5s linear;
     opacity: 1;
   }
 
@@ -2702,11 +2351,6 @@ footer {
   .dpt-view .our-team-icon {
     display: none;
   }
-
-
-
-
-
 
   .dpt-footer {
     display: block;
@@ -2727,45 +2371,6 @@ footer {
     width: auto;
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   .appointment-div {
     position: relative;
     right: -90px;
@@ -2780,10 +2385,6 @@ footer {
     right: -410%;
     display: block;
     padding: 20px 10px;
-  }
-
-  .appointment-div:hover .side-show {
-    right: ;
   }
 
   .side-show button {
@@ -2801,7 +2402,6 @@ footer {
     font-weight: bold;
   }
 
-
   .search-container {
     position: absolute;
     min-width: 100%;
@@ -2818,7 +2418,8 @@ footer {
     justify-content: center;
   }
 
-  #search, #fas1 {
+  #search,
+  #fas1 {
     display: none;
   }
 
@@ -2872,7 +2473,6 @@ footer {
   }
 
   #fas1 {
-    display: ;
     position: absolute;
     top: 160px;
     left: 20px;
@@ -2883,8 +2483,7 @@ footer {
     display: block;
   }
 
-
-  #adsArea{
+  #adsArea {
     display: flex;
     width: 100%;
     height: 300px;
@@ -2894,7 +2493,6 @@ footer {
     margin-bottom: 50px;
     z-index: -1;
   }
-
 
   .hover-container {
     height: auto;
@@ -2907,7 +2505,7 @@ footer {
     font-size: 12px;
   }
 
-  #information .strong-txt span{
+  #information .strong-txt span {
     font-size: 25px;
   }
 
@@ -2942,7 +2540,7 @@ footer {
     opacity: 0;
     transform: translateY(-90%);
     transition: opacity 2s ease, transform 3s ease;
-    }
+  }
 
   .information-transition1 {
     opacity: 1;
@@ -2952,9 +2550,9 @@ footer {
   .information2 {
     left: 0%;
     opacity: 0;
-    transform: scale(.5);
+    transform: scale(0.5);
     transition: opacity 2s ease, transform 3s ease;
-    }
+  }
 
   .information-transition2 {
     opacity: 1;
@@ -2966,7 +2564,7 @@ footer {
     opacity: 0;
     transform: translateY(90%);
     transition: opacity 2s ease, transform 3s ease;
-    }
+  }
 
   .information-transition3 {
     opacity: 1;
@@ -2980,19 +2578,18 @@ footer {
     width: 100%;
     left: 0%;
     text-align: center;
-    z-index: ;
     background: rgba(0, 0, 0, 0.3);
   }
 
   .attentions span:not(:first-child) {
     font-size: 18px;
-    font-family: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype", Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif;
+    font-family: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype",
+      Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif;
     font-weight: bold;
     width: 100%;
     margin: auto;
     color: antiquewhite;
   }
-
 
   #whyUs {
     width: 100%;
@@ -3031,11 +2628,12 @@ footer {
     padding: 50px 40px 0px 40px;
   }
 
-  .why-col-1, .why-col-2, .why-col-3 {
+  .why-col-1,
+  .why-col-2,
+  .why-col-3 {
     display: grid;
     width: 100%;
   }
-
 
   .testimonial-container h4 {
     width: 100%;
@@ -3066,18 +2664,19 @@ footer {
     position: relative;
     padding-left: 15px;
     margin-right: 30px;
-    box-shadow: 1px 1px 3px 1px rgba(0,0,255,.8);
+    box-shadow: 1px 1px 3px 1px rgba(0, 0, 255, 0.8);
   }
-
-
-
 
   .gallary-container {
     width: 100%;
     height: 480px;
     padding: 10px 0px;
     margin: 0px auto;
-    background-image: linear-gradient(rgba(0, 139, 139, 0.6), rgba(0, 139, 139, 0.8)), url(pic/hospital-gallary-under-img2.jpg);
+    background-image: linear-gradient(
+        rgba(0, 139, 139, 0.6),
+        rgba(0, 139, 139, 0.8)
+      ),
+      url(pic/hospital-gallary-under-img2.jpg);
     background-repeat: no-repeat;
     background-position: center;
     filter: blur(px);
@@ -3090,10 +2689,9 @@ footer {
     width: 80%;
     height: 100%;
     margin: 0px auto;
-    box-shadow: 1px -5px 20px 5px rgba(2,2,255,.8);
+    box-shadow: 1px -5px 20px 5px rgba(2, 2, 255, 0.8);
     border-radius: 3px;
   }
-
 
   .next {
     right: 10%;
@@ -3107,19 +2705,12 @@ footer {
   .row {
     width: 100%;
     height: 50px;
-    background-color: ;
     display: flex;
     justify-content: space-around;
   }
 
-
-
-
-
-
   .our-team-container {
     width: 100%;
-    height: ;
     padding: 40px;
     background-color: white;
     position: relative;
@@ -3145,263 +2736,217 @@ footer {
     height: 400px;
   }
 
+  footer {
+    width: 100%;
+    background-color: darkblue;
+    display: block;
+    position: relative;
+    overflow-x: hidden;
+  }
 
+  .helpful-section {
+    width: 100%;
+    height: 80px;
+    background-image: url("pic/hospitalads1.jpg");
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: 100%;
+  }
 
+  .main-footer {
+    display: block;
+    padding: 0px 10px 20px 10px;
+  }
 
+  .footer-container {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    left: 0%;
+  }
 
+  .footer-col {
+    display: block;
+  }
 
+  .footer {
+    display: block;
+    width: 100%;
+    margin: 20px 0px;
+    position: relative;
+    padding: 0px 10px;
+    text-align: left;
+  }
 
+  .footer:first-child {
+    text-align: left;
+  }
 
+  .footer a {
+    color: white;
+    text-decoration: none;
+  }
 
+  .col-1 a,
+  .col-1 p {
+    color: yellow;
+    padding-top: 10px;
+  }
 
+  .footer h2 {
+    color: white;
+    font-size: 20px;
+    font-family: serif;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
 
+  .footer li {
+    list-style: none;
+    font-size: 14px;
+    padding-bottom: 10px;
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+    text-transform: capitalize;
+  }
 
+  .footer-contact {
+    display: block;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 20px auto 0px;
+    transform: unset;
+    border: 3px solid transparent;
+    padding: 10px;
+    border-image: url("pic/border2.png") 100 stretch;
+  }
 
+  .footer-contact a {
+    color: white;
+    text-decoration: none;
+  }
 
+  .footer-contact span {
+    transform: unset;
+    color: white;
+    font-size: 12px;
+    text-transform: capitalize;
+    margin: auto 0px;
+  }
 
+  .footer-contact .reachus {
+    transform: unset;
+    margin: 20px 0px;
+  }
 
+  .footer-contact .fas {
+    font-size: 20px;
+    padding-right: 8px;
+  }
 
+  .mobile-logo {
+    display: flex;
+    justify-content: center;
+  }
 
+  .footer-contact img {
+    width: 120px;
+    height: 35px;
+    transform: unset;
+    display: flex;
+    object-position: 100% 80%;
+    padding-left: 10px;
+  }
 
+  .half-moon {
+    background: unset; /*linear-gradient(to right, #0099FF 20%, red 100%)*/
+    height: 100%;
+    width: 100%;
+    border-radius: unset;
+    margin: auto 0px;
+    position: relative;
+    right: 0%;
+  }
 
+  .half-moon .social-media {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 0px;
+  }
 
+  .half-moon i {
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 5px 7px;
+    color: white;
+    position: relative;
+    left: 0%;
+  }
 
+  .copyright {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    text-transform: capitalize;
+    display: block;
+    position: relative;
+    padding: 10px;
+  }
 
+  .copyright div:first-child {
+    margin: 0px 0px 15px 0px;
+    display: flex;
+    justify-content: center;
+  }
 
+  .copyright div:last-child {
+    margin: 10px 0px;
+    display: flex;
+    justify-content: center;
+  }
 
+  .copyright span {
+    padding: 0px 5px;
+  }
 
+  .copyright a {
+    color: black;
+    text-decoration: none;
+  }
 
+  .footerbtn {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+  }
 
+  .showfooter {
+    display: none;
+    position: relative;
+  }
 
+  .fa-plus,
+  .fa-square-minus {
+    color: white;
+    cursor: pointer;
+    font-size: 25px;
+  }
 
-footer {
-  width: 100%;
-  background-color: darkblue;
-  display: block;
-  position: relative;
-  overflow-x: hidden;
+  #footerIcon {
+    display: block;
+  }
 }
-
-.helpful-section {
-  width: 100%;
-  height: 80px;
-  background-image: url("pic/hospitalads1.jpg");
-  background-repeat: no-repeat;
-  background-position: 100% 100%;
-  background-size: 100%;
-}
-
-.main-footer {
-  display: block;
-  padding: 0px 10px 20px 10px;
-}
-
-.footer-container {
-  width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  position: relative;
-  left: 0%;
-}
-
-.footer-col {
-  display: block;
-}
-
-.footer {
-  display: block;
-  width: 100%;
-  margin: 20px 0px;
-  position: relative;
-  padding: 0px 10px;
-  text-align: left;
-
-}
-
-.footer:first-child {
-  text-align: left;
-}
-
-.footer a {
-  color: white;
-  text-decoration: none;
-}
-
-.col-1 a, .col-1 p {
-  color: yellow;
-  padding-top: 10px;
-}
-
-.footer h2 {
-  color: white;
-  font-size: 20px;
-  font-family: serif;
-  margin-bottom: 15px;
-  text-transform: uppercase;
-}
-
-.footer li {
-  list-style: none;
-  font-size: 14px;
-  padding-bottom: 10px;
-  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-  text-transform: capitalize;
-}
-
-.footer-contact {
-  display: block;
-  justify-content: space-evenly;
-  width: 100%;
-  margin: 20px auto 0px;
-  transform: unset;
-  border: 3px solid transparent;
-  padding: 10px;
-  border-image: url("pic/border2.png") 100 stretch;
-}
-
-.footer-contact a {
-  color: white;
-  text-decoration: none;
-}
-
-.footer-contact span {
-  transform: unset;
-  color: white;
-  font-size: 12px;
-  text-transform: capitalize;
-  margin: auto 0px;
-}
-
-.footer-contact .reachus {
-  transform: unset;
-  margin: 20px 0px;
-}
-
-.footer-contact .fas {
-  font-size: 20px;
-  padding-right: 8px;
-}
-
-.mobile-logo {
-  display: flex;
-  justify-content: center;
-}
-
-.footer-contact img {
-  width: 120px;
-  height: 35px;
-  transform: unset;
-  display: flex;
-  object-fit: ;
-  object-position: 100% 80%;
-  padding-left: 10px;
-}
-
-
-.half-moon {
-  background: unset;/*linear-gradient(to right, #0099FF 20%, red 100%)*/;
-  height: 100%;
-  width: 100%;
-  border-radius: unset;
-  margin: auto 0px;
-  position: relative;
-  right: 0%;
-}
-
-.half-moon .social-media {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 10px 0px;
-}
-
-.half-moon i {
-  font-size: 20px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  cursor: pointer;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  padding: 5px 7px;
-  color: white;
-  position: relative;
-  left: 0%;
-
-}
-
-
-
-.copyright {
-  width: 100%;
-  height: auto;
-  background-color: white;
-  text-transform: capitalize;
-  display: block;
-  position: relative;
-  padding: 10px;
-}
-
-.copyright div:first-child {
-  margin: 0px 0px 15px 0px;
-  display: flex;
-  justify-content: center;
-}
-
-.copyright div:last-child {
-  margin: 10px 0px ;
-  display: flex;
-  justify-content: center;
-}
-
-.copyright span {
-  padding: 0px 5px;
-}
-
-.copyright a {
-  color: black;
-  text-decoration: none;
-}
-
-.footerbtn {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-}
-
-.showfooter {
-  display: none;
-  position: relative;
-}
-
-.fa-plus, .fa-square-minus {
-  color: white;
-  cursor: pointer;
-  font-size: 25px;
-}
-
-#footerIcon {
-  display: block;
-}
-
-}
-
-
-
-
-
-
-
-
-
-
-
 
 @media screen and (max-width: 600px) {
-  
   .nav.responsive {
     position: absolute;
     width: 100%;
@@ -3431,7 +2976,7 @@ footer {
     animation-direction: alternate;
   }
 
-   @keyframes drop {
+  @keyframes drop {
     0% {
       opacity: 0;
       height: 0vh;
@@ -3456,7 +3001,8 @@ footer {
     padding: 16px 10px;
   }
 
-  .logo-img, #search {
+  .logo-img,
+  #search {
     z-index: 1;
   }
 
