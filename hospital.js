@@ -91,25 +91,6 @@ chngbackg.addEventListener("mouseover", changeBackground);
   }  
 
 
-/*
-
-window.addEventListener('load', function() {
-  // wait until the page loads before working with HTML elements
-  document.addEventListener('mouseover', function(event) {
-    //click listener on the document
-    document.querySelectorAll('.dropdown-content2').forEach(function(el) {
-      if (el !== event.target) el.classList.remove('show')
-      // close any showing dropdown that isn't the one just clicked
-    });
-    if (event.target.matches('.dropbtn2')) {
-      event.target.closest('.dropdown-content').querySelector('.dropdown-content2').classList.toggle('show')
-    }
-    // if this is a dropdown button being clicked, toggle the show class
-  })
-})
-
-*/
-
 let footerdropdown = document.querySelector(".showfooter");
 let footericon = document.getElementById("footerIcon");
 
@@ -324,31 +305,6 @@ function rechangeImg() {
   }
 
 
-  /*if (divv.style.backgroundImage === "url('pic/Doctor-checking-blood-pressure.jpg')") {
-    divv.style.backgroundImage = "url('pic/nurse7.jpg')";
-  }else if (divv.style.backgroundImage != "url('pic/pic/Doctor-checking-blood-pressure.jpg')") {
-    divv.style.backgroundImage = "url('pic/Doctor-checking-blood-pressure.jpg')";
-  }else {
-
-  }*/
-
-
-/*let ourTeamImg = document.getElementById("ourTeam");
-ourTeamImg.addEventListener("mouseover", showDetails);
-ourTeamImg.addEventListener("click", mySecondFunction);
-
-function showDetails() {
-  let txtopacity = document.querySelectorAll(".span")
-  let imagedim = document.querySelectorAll(".hey")
-  if (imagedim.style.opacity > 1) {imagedim.style.opacity = .5}
-  for (i = 0; i < txtopacity.length; i++) {
-    txtopacity[i].style.opacity = "1";
-    txtopacity[i].style.bottom = "50%";
-  }
-  for (i = 0; i < imagedim.length; i++) {
-    imagedim[i].style.opacity = "0.5";
-  }
-};*/
 
 
 function checkCookies() {
