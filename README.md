@@ -1,3 +1,4 @@
-# hospital
-I developed this hospital website myself while i was thinling of way of easing hospital stress and appointment booking, though their have been many of kind that developers have comes up with but at a way to improve myself and establish myself, i did this. At a time, i sat down and think on what else can i develope that atleast will make sense and this leads me to the development and creation of this hospital site which i go online to download most of the images used during the processs and also get some such site template in other to have myown sketch of how i want the looks to be.
-The site still need some or many adjustment or update which i will continue to do with time.
+# hospital Web Page
+
+
+I developed this hospital website myself while I was thinking of ways to alleviate hospital-related stress and streamline appointment booking. Although there are already several similar applications developed by other programmers, I undertook this project as an opportunity to enhance my skills and establish myself in the field. One day, I sat down and contemplated what more I could create to make a meaningful contribution.
